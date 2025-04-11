@@ -1,0 +1,9 @@
+root@comp3134-Winter2025:~# tcpdump -i any -A 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0) and (tcp[((tcp[12]&0xf0)>>2):4] = 0x504f5354)'
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+^C
+0 packets captured
+1 packet received by filter
+0 packets dropped by kernel
+

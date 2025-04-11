@@ -1,0 +1,47 @@
+1
+
+Amazon Technologies Inc.
+Location	Ashburn, Virginia, United States of America
+AS	AS16509
+AS name	Amazon.com, Inc.
+52.94.225.242
+
+2
+ 
+ttc.ca
+Microsoft Corporation
+Location	Toronto, Ontario, Canada
+AS	AS8075
+AS name	Microsoft Corporation
+20.39.143.75
+
+3
+
+adobe.com
+Akamai Technologies, Inc.
+Location	San Jose, California, United States of America
+AS	AS20940
+AS name	Akamai International B.V.
+23.45.112.48
+
+4
+
+uber.com
+Uber Technologies, Inc
+Location	San Francisco, California, United States of America
+AS	AS396982
+AS name	Google LLC
+69.48.216.7
+
+5
+
+tcs.com
+Microsoft Corporation
+Location	Pune, Maharashtra, India
+AS	AS8075
+AS name	Microsoft Corporation
+4.247.162.6
+
+
+
+

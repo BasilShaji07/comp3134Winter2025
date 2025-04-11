@@ -1,0 +1,10 @@
+nmap -F 20.39.143,75
+grap ina nep 2.80 / 20-39./45.13.0rg ) at 2025-01-22 23125 UTC
+Hoat ta up (0.0030a lateney) .
+Not ahown: 98 filtered porta
+PORT
+STATE SERVICE
+80/tep open
+http
+443/top open httpa
+Nmap done: 1 IP address (1 host up) scanned in 1,93 seconds

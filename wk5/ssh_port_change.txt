@@ -1,0 +1,6 @@
+root@comp3134-Winter2025:~# systemctl restart sshd
+
+ans@ans-laptop ~]$ ssh root@159.203.21.208 -p 2222
+
+
+

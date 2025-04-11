@@ -1,0 +1,5 @@
+What is the difference between the two solutions?
+
+Strip tags removes all HTML tags and outputs whatever is left while html_entities encodes characters which are special characters in HTML. 
+
+

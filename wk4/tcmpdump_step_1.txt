@@ -1,0 +1,61 @@
+root@comp3134-Winter2025:~# tcpdump -i any '(arp or port 53)'
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+18:20:04.119564 eth0  Out ARP, Request who-has _gateway tell comp3134-Winter2025, length 28
+18:20:04.121502 eth0  In  ARP, Reply _gateway is-at fe:00:00:00:01:01 (oui Unknown), length 46
+18:20:04.191233 lo    In  IP localhost.55027 > localhost.domain: 12680+ [1au] PTR? 1.16.203.159.in-addr.arpa. (54)
+18:20:04.192010 eth0  Out IP comp3134-Winter2025.45807 > 67.207.67.2.domain: 56875+ [1au] PTR? 1.16.203.159.in-addr.arpa. (54)
+18:20:04.230229 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.45807: 56875 NXDomain 0/1/1 (121)
+18:20:04.230447 eth0  Out IP comp3134-Winter2025.45807 > 67.207.67.2.domain: 56875+ PTR? 1.16.203.159.in-addr.arpa. (43)
+18:20:04.231925 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.45807: 56875 NXDomain 0/1/0 (110)
+18:20:04.232917 lo    In  IP localhost.domain > localhost.55027: 12680*$ 1/0/1 PTR _gateway. (76)
+18:20:04.233134 lo    In  IP localhost.59516 > localhost.domain: 63737+ [1au] PTR? 208.21.203.159.in-addr.arpa. (56)
+18:20:04.233374 eth0  Out IP comp3134-Winter2025.34549 > 67.207.67.2.domain: 31813+ [1au] PTR? 208.21.203.159.in-addr.arpa. (56)
+18:20:04.266468 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.34549: 31813 NXDomain 0/1/1 (123)
+18:20:04.266723 eth0  Out IP comp3134-Winter2025.34549 > 67.207.67.2.domain: 31813+ PTR? 208.21.203.159.in-addr.arpa. (45)
+18:20:04.271453 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.34549: 31813 NXDomain 0/1/0 (112)
+18:20:04.272324 lo    In  IP localhost.domain > localhost.59516: 63737*$ 2/0/1 PTR comp3134-Winter2025., PTR comp3134-Winter2025.local. (128)
+18:20:04.296025 lo    In  IP localhost.43509 > localhost.domain: 32783+ [1au] PTR? 53.0.0.127.in-addr.arpa. (52)
+18:20:04.296206 lo    In  IP localhost.domain > localhost.43509: 32783*$ 1/0/1 PTR localhost. (75)
+18:20:04.297339 lo    In  IP localhost.35458 > localhost.domain: 54465+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+18:20:04.297984 eth0  Out IP comp3134-Winter2025.51494 > 67.207.67.2.domain: 54058+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+18:20:04.298230 eth0  Out IP comp3134-Winter2025.57187 > 67.207.67.2.domain: 56473+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+18:20:04.299397 eth0  Out IP comp3134-Winter2025.60318 > 67.207.67.3.domain: Flags [S], seq 1860142183, win 64240, options [mss 1460,sackOK,TS val 4150776675 ecr 0,nop,wscale 7,tfo  cookiereq,nop,nop], length 0
+18:20:04.302127 eth0  In  IP 67.207.67.3.domain > comp3134-Winter2025.60318: Flags [S.], seq 4160768491, ack 1860142184, win 65160, options [mss 1460,sackOK,TS val 2079547049 ecr 4150776675,nop,wscale 9], length 0
+18:20:04.302209 eth0  Out IP comp3134-Winter2025.60318 > 67.207.67.3.domain: Flags [.], ack 1, win 502, options [nop,nop,TS val 4150776678 ecr 2079547049], length 0
+18:20:04.302389 eth0  Out IP comp3134-Winter2025.60318 > 67.207.67.3.domain: Flags [P.], seq 1:45, ack 1, win 502, options [nop,nop,TS val 4150776678 ecr 2079547049], length 44 2387+ PTR? 2.67.207.67.in-addr.arpa. (42)
+18:20:04.303478 eth0  In  IP 67.207.67.3.domain > comp3134-Winter2025.60318: Flags [.], ack 45, win 128, options [nop,nop,TS val 2079547051 ecr 4150776678], length 0
+18:20:04.314031 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.51494: 54058 NXDomain 0/1/1 (120)
+18:20:04.314442 eth0  Out IP comp3134-Winter2025.51494 > 67.207.67.2.domain: 54058+ PTR? 2.67.207.67.in-addr.arpa. (42)
+18:20:04.316708 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.57187: 56473 NXDomain 0/1/1 (120)
+18:20:04.316940 eth0  Out IP comp3134-Winter2025.57187 > 67.207.67.2.domain: 56473+ PTR? 2.67.207.67.in-addr.arpa. (42)
+18:20:04.318858 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.57187: 56473 NXDomain 0/1/0 (109)
+18:20:04.319102 eth0  In  IP 67.207.67.3.domain > comp3134-Winter2025.60318: Flags [P.], seq 1:112, ack 45, win 128, options [nop,nop,TS val 2079547066 ecr 4150776678], length 111 2387 NXDomain 0/1/0 (109)
+18:20:04.319155 eth0  Out IP comp3134-Winter2025.60318 > 67.207.67.3.domain: Flags [.], ack 112, win 502, options [nop,nop,TS val 4150776695 ecr 2079547066], length 0
+18:20:04.331240 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.51494: 54058 NXDomain 0/1/0 (109)
+18:20:04.331791 lo    In  IP localhost.domain > localhost.35458: 54465 NXDomain 0/1/1 (120)
+18:20:04.400124 lo    In  IP localhost.56811 > localhost.domain: 17751+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+18:20:04.400549 eth0  Out IP comp3134-Winter2025.50119 > 67.207.67.2.domain: 12573+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+18:20:04.400639 eth0  Out IP comp3134-Winter2025.50055 > 67.207.67.2.domain: 65409+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+18:20:04.400676 eth0  Out IP comp3134-Winter2025.60318 > 67.207.67.3.domain: Flags [P.], seq 45:89, ack 112, win 502, options [nop,nop,TS val 4150776777 ecr 2079547066], length 44 53659+ PTR? 3.67.207.67.in-addr.arpa. (42)
+18:20:04.419289 eth0  In  IP 67.207.67.3.domain > comp3134-Winter2025.60318: Flags [P.], seq 112:223, ack 89, win 128, options [nop,nop,TS val 2079547166 ecr 4150776777], length 111 53659 NXDomain 0/1/0 (109)
+18:20:04.419360 eth0  Out IP comp3134-Winter2025.60318 > 67.207.67.3.domain: Flags [.], ack 223, win 502, options [nop,nop,TS val 4150776795 ecr 2079547166], length 0
+18:20:04.419807 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.50119: 12573 NXDomain 0/1/1 (120)
+18:20:04.420064 eth0  Out IP comp3134-Winter2025.50119 > 67.207.67.2.domain: 12573+ PTR? 3.67.207.67.in-addr.arpa. (42)
+18:20:04.421306 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.50055: 65409 NXDomain 0/1/1 (120)
+18:20:04.421447 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.50119: 12573 NXDomain 0/1/0 (109)
+18:20:04.421502 eth0  Out IP comp3134-Winter2025.50055 > 67.207.67.2.domain: 65409+ PTR? 3.67.207.67.in-addr.arpa. (42)
+18:20:04.422732 eth0  In  IP 67.207.67.2.domain > comp3134-Winter2025.50055: 65409 NXDomain 0/1/0 (109)
+18:20:04.423125 lo    In  IP localhost.domain > localhost.56811: 17751 NXDomain 0/1/1 (120)
+18:20:07.289182 eth0  In  IP 67.207.67.3.domain > comp3134-Winter2025.60318: Flags [F.], seq 223, ack 89, win 128, options [nop,nop,TS val 2079550036 ecr 4150776795], length 0
+18:20:07.289362 eth0  Out IP comp3134-Winter2025.60318 > 67.207.67.3.domain: Flags [F.], seq 89, ack 224, win 502, options [nop,nop,TS val 4150779665 ecr 2079550036], length 0
+18:20:07.290517 eth0  In  IP 67.207.67.3.domain > comp3134-Winter2025.60318: Flags [.], ack 90, win 128, options [nop,nop,TS val 2079550038 ecr 4150779665], length 0
+18:20:49.686658 eth0  Out ARP, Request who-has _gateway tell comp3134-Winter2025, length 28
+18:20:49.687567 eth0  In  ARP, Reply _gateway is-at fe:00:00:00:01:01 (oui Unknown), length 46
+18:21:18.358692 eth0  Out ARP, Request who-has _gateway tell comp3134-Winter2025, length 28
+18:21:18.360082 eth0  In  ARP, Reply _gateway is-at fe:00:00:00:01:01 (oui Unknown), length 46
+^C
+53 packets captured
+65 packets received by filter
+0 packets dropped by kernel

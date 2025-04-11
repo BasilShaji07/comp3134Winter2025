@@ -1,0 +1,8 @@
+root@comp3134-Winter2025:~# tcpdump -i any -A 'udp and port 53' | grep -i 'google'
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+^C0 packets captured
+2 packets received by filter
+0 packets dropped by kernel
+
